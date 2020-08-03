@@ -1,0 +1,485 @@
+{% extends 'base.html' %} {% load static %}{% block title %} Home {% endblock %} {% block meta_description %} The
+webpage of RoboCool Home {% endblock %} {% block content %}
+<!-- banner part start-->
+<section class="banner_part">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-xl-6">
+                <div class="banner_text">
+                    <div class="banner_text_iner">
+                        <!-- <h5> Master key skills in the field of Robotics</h5> -->
+                        <h1>The next generation of Roboticists starts here</h1>
+                        <!-- <p>RoboCool integrates robots into the classrooms to empower our kids with 21-century skills.
+                            RoboCool provides student-centered programs where project-based learning fosters innovation,
+                            collaboration and problem-solving skills.
+                        </p> -->
+                        <a href="{% url 'programs'%}" class="btn_1">View Programs</a>
+                        <a href="{% url 'contact'%}" class="btn_2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner part start-->
+
+<!-- feature_part start-->
+<section class="feature_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 align-self-center">
+                <div class="single_feature_text ">
+                    <h2>RoboCool <br> Methods</h2>
+                    <p>All of our programs are designed based on the following 3 principles: </p>
+                    <a href="{% url 'programs'%}" class="btn_1">Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="w3-round"><img src="{% static 'website/img/main/learnbydoing.png' %}" alt="Image" class="img-fluid"></span>
+                        <h4>Learn By Doing</h4>
+                        <p>You develop your own projects on real robotic platform</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="w3-round"><img src="{% static 'website/img/main/mentor.png' %}" alt="Image" class="img-fluid"></span>
+                        <h4>Qualified Mentors</h4>
+                        <p>A mentor guides you throughout your unique learning journey</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part single_feature_part_2">
+                        <span class="w3-round"><img src="{% static 'website/img/main/teamwork2.svg' %}" alt="Image" class="img-fluid"></span>
+                        <h4>Team Work</h4>
+                        <p>The student performs all the tasks with a teammate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- upcoming_event part start-->
+
+<!-- learning part start-->
+<section class="learning_part">
+    <div class="container">
+        <div class="row align-items-sm-center align-items-lg-stretch">
+            <div class="col-md-7 col-lg-7">
+                <div class="learning_img">
+                    <img src="{% static 'website/img/main/kid.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <div class="learning_member_text">
+                    <h5>About us</h5>
+                    <h2>Bring Innovation to your child</h2>
+                    <p>RoboCool integrates robots into the classrooms to empower our children with 21-century skills. RoboCool Programs are student-centered where project-based learning fosters innovation, collaboration and problem-solving skills.
+                        We provide practical projects and tools to help students program and control their robots.</p>
+                    <!-- <ul>
+                        <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
+                            gathered wear</li>
+                        <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
+                            night.</li>
+                    </ul> -->
+                    <a href="{% url 'about'%}" class="btn_1">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- learning part end-->
+
+<!-- member_counter counter start -->
+<!-- <section class="member_counter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">1024</span>
+                    <h4>All Teachers</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">960</span>
+                    <h4> All Students</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">1020</span>
+                    <h4>Online Students</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single_member_counter">
+                    <span class="counter">820</span>
+                    <h4>Ofline Students</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- member_counter counter end -->
+
+<!--::review_part start::-->
+<section class="special_cource padding_top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="section_tittle text-center">
+                    <!-- <p>popular courses</p> -->
+                    <h2>Our Programs</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-6 col-lg-4">
+                <div class="single_special_cource">
+                    <img src="{% static 'website/img/main/tello.png' %}" class="special_img" alt="">
+                    <div class="special_cource_text">
+                        <a href="{% url 'robofly' %}" class="btn_4">Robotics</a>
+                        <!-- <h4>490 PLN</h4> -->
+                        <a href="{% url 'robofly' %}">
+                            <h3>RoboFly</h3>
+                        </a>
+                        <p>Learn Programming with Drones</p>
+                        <!-- <div class="author_info">
+                            <div class="author_img">
+                                <img src="{% static 'website/img/author/author_1.png' %}" alt="">
+                                <div class="author_info_text">
+                                    <p>Conduct by:</p>
+                                    <h5><a href="#">James Well</a></h5>
+                                </div>
+                            </div>
+                            <div class="author_rating">
+                                <div class="rating">
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/star.svg' %}" alt=""></a>
+                                </div>
+                                <p>3.8 Ratings</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="col-sm-6 col-lg-4">
+                <div class="single_special_cource">
+                    <img src="{% static 'website/img/special_cource_2.png' %}" class="special_img" alt="">
+                    <div class="special_cource_text">
+                        <a href="{% url 'robofly' %}" class="btn_4">design</a>
+                        <h4>$160.00</h4>
+                        <a href="{% url 'robofly' %}">
+                            <h3>Web UX/UI Design </h3>
+                        </a>
+                        <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                        <div class="author_info">
+                            <div class="author_img">
+                                <img src="{% static 'website/img/author/author_2.png' %}" alt="">
+                                <div class="author_info_text">
+                                    <p>Conduct by:</p>
+                                    <h5><a href="#">James Well</a></h5>
+                                </div>
+                            </div>
+                            <div class="author_rating">
+                                <div class="rating">
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/star.svg' %}" alt=""></a>
+                                </div>
+                                <p>3.8 Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="single_special_cource">
+                    <img src="{% static 'website/img/special_cource_3.png' %}" class="special_img" alt="">
+                    <div class="special_cource_text">
+                        <a href="{% url 'robofly' %}" class="btn_4">Wordpress</a>
+                        <h4>$140.00</h4>
+                        <a href="{% url 'robofly' %}">
+                            <h3>Wordpress Development</h3>
+                        </a>
+                        <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                        <div class="author_info">
+                            <div class="author_img">
+                                <img src="{% static 'website/img/author/author_3.png' %}" alt="">
+                                <div class="author_info_text">
+                                    <p>Conduct by:</p>
+                                    <h5><a href="#">James Well</a></h5>
+                                </div>
+                            </div>
+                            <div class="author_rating">
+                                <div class="rating">
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/color_star.svg' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'website/img/icon/star.svg' %}" alt=""></a>
+                                </div>
+                                <p>3.8 Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>-->
+        </div>
+    </div>
+</section>
+<!--::blog_part end::-->
+
+<!-- learning part start-->
+<section class="advance_feature learning_part">
+    <div class="container">
+        <div class="row align-items-sm-center align-items-xl-stretch">
+            <div class="col-md-6 col-lg-6">
+                <div class="learning_member_text">
+                    <h5>Why Us</h5>
+                    <h2>Access Latest STEM Trends</h2>
+                    <p>The future will involve the robots as our companions, it is very crucial to experience the way they
+                        function, sense and process commands. Through building various projects, each of which introduces
+                        new concept of Robotics, the students will gain strong foundations of critical thinking and
+                        creativity skills. After graduation from RoboCool programs, our students will be able to expand their perspective and
+                        program robots to shape the world.</p>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                            <div class="learning_member_text_iner">
+                                <!-- <span class="ti-pencil-alt"></span> -->
+                                <span class="w3-round"><img src="{% static 'website/img/main/code2.svg' %}" alt="Image" class="img-fluid"></span>
+                                <h4>Code & Explore</h4>
+                                <p>All programs include programming projects for real-world applications</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                            <div class="learning_member_text_iner">
+                                <span class="w3-round"><img src="{% static 'website/img/main/learn.svg' %}" alt="Image" class="img-fluid"></span>
+                                <!-- <span class="ti-stamp"></span> -->
+                                <h4>Learn & Play</h4>
+                                <p>Project-based approach combined with competition enriches the learning process</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="learning_img">
+                    <img src="{% static 'website/img/main/drone.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- learning part end-->
+
+<!--::review_part start::-->
+<!-- <section class="testimonial_part">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="section_tittle text-center">
+                    <p>tesimonials</p>
+                    <h2>Happy Students</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="textimonial_iner owl-carousel">
+                    <div class="testimonial_slider">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                <div class="testimonial_slider_text">
+                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                        hath herb divided divide creepeth living shall i call beginning
+                                        third sea itself set</p>
+                                    <h4>Michel Hashale</h4>
+                                    <h5> Sr. Web designer</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-2 col-sm-4">
+                                <div class="testimonial_slider_img">
+                                    <img src="{% static 'website/img/testimonial_img_1.png' %}" alt="#">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-none d-xl-block">
+                                <div class="testimonial_slider_text">
+                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                        hath herb divided divide creepeth living shall i call beginning
+                                        third sea itself set</p>
+                                    <h4>Michel Hashale</h4>
+                                    <h5> Sr. Web designer</h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 d-none d-xl-block">
+                                <div class="testimonial_slider_img">
+                                    <img src="{% static 'website/img/testimonial_img_1.png' %}" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_slider">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                <div class="testimonial_slider_text">
+                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                        hath herb divided divide creepeth living shall i call beginning
+                                        third sea itself set</p>
+                                    <h4>Michel Hashale</h4>
+                                    <h5> Sr. Web designer</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-2 col-sm-4">
+                                <div class="testimonial_slider_img">
+                                    <img src="{% static 'website/img/testimonial_img_2.png' %}" alt="#">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-none d-xl-block">
+                                <div class="testimonial_slider_text">
+                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                        hath herb divided divide creepeth living shall i call beginning
+                                        third sea itself set</p>
+                                    <h4>Michel Hashale</h4>
+                                    <h5> Sr. Web designer</h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 d-none d-xl-block">
+                                <div class="testimonial_slider_img">
+                                    <img src="{% static 'website/img/testimonial_img_1.png' %}" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_slider">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                <div class="testimonial_slider_text">
+                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                        hath herb divided divide creepeth living shall i call beginning
+                                        third sea itself set</p>
+                                    <h4>Michel Hashale</h4>
+                                    <h5> Sr. Web designer</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-2 col-sm-4">
+                                <div class="testimonial_slider_img">
+                                    <img src="{% static 'website/img/testimonial_img_3.png' %}" alt="#">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-none d-xl-block">
+                                <div class="testimonial_slider_text">
+                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                        hath herb divided divide creepeth living shall i call beginning
+                                        third sea itself set</p>
+                                    <h4>Michel Hashale</h4>
+                                    <h5> Sr. Web designer</h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 d-none d-xl-block">
+                                <div class="testimonial_slider_img">
+                                    <img src="{% static 'website/img/testimonial_img_1.png' %}" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+<!--::blog_part end::-->
+
+<!--::blog_part start::-->
+<!-- <section class="blog_part section_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="section_tittle text-center"> -->
+                    <!-- <p>News</p> -->
+
+                    <!-- <h2>Latest News</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row"> -->
+
+            <!-- <div class="col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                        <img src="{% static 'website/img/blog/blog_1.png' %}" class="card-img-top" alt="blog">
+                        <div class="card-body">
+                            <a href="#" class="btn_4">Design</a>
+                            <a href="{% url 'news' %}">
+                                <h5 class="card-title">Dry beginning sea over tree</h5>
+                            </a>
+                            <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                            <ul>
+                                <li> <span class="ti-comments"></span>2 Comments</li>
+                                <li> <span class="ti-heart"></span>2k Like</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                        <img src="{% static 'website/img/blog/blog_2.png' %}" class="card-img-top" alt="blog">
+                        <div class="card-body">
+                            <a href="#" class="btn_4">Developing</a>
+                            <a href="{% url 'news' %}">
+                                <h5 class="card-title">All beginning air two likeness</h5>
+                            </a>
+                            <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                            <ul>
+                                <li> <span class="ti-comments"></span>2 Comments</li>
+                                <li> <span class="ti-heart"></span>2k Like</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            
+            <!-- <div class="col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                        <img src="{% static 'website/img/blog/blog_3.png' %}" class="card-img-top" alt="blog">
+                        <div class="card-body">
+                            <a href="#" class="btn_4">Design</a>
+                            <a href="{% url 'news' %}">
+                                <h5 class="card-title">Form day seasons sea hand</h5>
+                            </a>
+                            <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                            <ul>
+                                <li> <span class="ti-comments"></span>2 Comments</li>
+                                <li> <span class="ti-heart"></span>2k Like</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+        <!-- </div>
+    </div>
+</section> -->
+<!--::blog_part end::-->
+{% endblock %}
