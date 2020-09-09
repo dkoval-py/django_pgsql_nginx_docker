@@ -8,9 +8,12 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
 
+sys.path.append('/srv/web_trial')
+sys.path.append('/srv/web_trial/robocool')
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'robocool.settings')
 
 application = get_wsgi_application()
