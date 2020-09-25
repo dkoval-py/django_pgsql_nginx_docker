@@ -1,7 +1,7 @@
 FROM python:3.7-slim
 
 RUN apt update && \
-    apt install -y --no-install-recommends build-essential python3-dev libpq-dev postgresql-contrib gcc musl-dev && \
+    apt install -y --no-install-recommends build-essential python3-dev libpq-dev postgresql-contrib gcc musl-dev netcat && \
     rm -rf /var/lib/apt/list/*
 
 RUN pip install --no-cache uwsgi==2.0.19
