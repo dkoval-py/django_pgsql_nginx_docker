@@ -3,6 +3,8 @@ version: '3.6'
 services:
         nginx:
                 build: ./nginx
+                labels:
+                        "autoheal": "true"
                 ports:
                         - 1337:80
                 depends_on:
@@ -16,6 +18,8 @@ services:
                         - 8000
                 env_file:
                         - .env.dev
+                labels:
+                        "autoheal": "true"
                 depends_on:
                         - db
         db:
@@ -24,6 +28,13 @@ services:
                         - postgres_data:/var/lib/postgresql/data/
                 env_file:
                         - .env.db
+        autoheal:
+                image: willfarrell/autoheal
+                container_name: autoheal
+                volumes:
+                        - '/var/run/docker.sock:/var/run/docker.sok'
+                environment:
+                        - AUTOHEAL_INTERVAL=10
 volumes:
         postgres_data:
 
