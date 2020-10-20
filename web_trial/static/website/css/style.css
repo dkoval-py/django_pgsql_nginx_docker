@@ -2734,7 +2734,7 @@ ul {
   width: 41%;
   height: 69%;
   content: "";
-  background-image: url(../img/main/robot.svg);
+  background-image: url(../img/main/);
   transform: scaleX(-1);
   background-size: 100% 100%;
   right: 9%;
