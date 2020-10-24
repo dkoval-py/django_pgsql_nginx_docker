@@ -141,10 +141,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # email settings
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'server914690.nazwa.pl' #Smtp.aol.com
+EMAIL_HOST = 'serve.zwa' #Smtp.aol.com
 EMAIL_PORT = 465 #993
-EMAIL_HOST_USER = 'server914690.nazwa.pl'
-EMAIL_HOST_PASSWPRD = '4774275hassaN'
+EMAIL_HOST_USER = 'serve.zwa'
+EMAIL_HOST_PASSWPRD = '477asd'
 # EMAIL_USE_TLS = True
 EMAIL_USE_SSL = True
 
