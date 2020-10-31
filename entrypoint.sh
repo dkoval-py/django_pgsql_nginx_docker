@@ -1,5 +1,5 @@
 #!/bin/sh
-# Check starting Postgresql 
+# Check starting Postgresql
 
 if [ "$DATABASE" = "postgres" ]
 then
