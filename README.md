@@ -1,5 +1,5 @@
 Шоб джанго тянув статику з s3 та виконував collectstatic теж на s3 в settings.py потрібно розкоментувати строки підключення до s3.
-Створити в iam юзера та групу з повним доступом до s3 в полях AWS_ACCESS_KEY_ID та AWS_SECRET_ACCESS_KEY вписати ключі даного юзера та закоментувати строки в settings.py які виконують collectstatic локально
+Створити в iam юзера та групу з повним доступом до s3 в полях AWS_ACCESS_KEY_ID та AWS_SECRET_ACCESS_KEY вписати ключі даного юзера та закоментувати строки в settings.py які виконують collectstatic локально.
 
 ```
 # Save static files in AWS S3
